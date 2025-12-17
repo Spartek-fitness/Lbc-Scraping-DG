@@ -45,9 +45,9 @@ Le script propose 2 modes d'utilisation :
 1. Créer un fichier `urls.csv` avec une colonne "url" :
    ```csv
    url,scraped,date_scraped
-   https://www.leboncoin.fr/ad/sport_plein_air/3113819301,,
-   https://www.leboncoin.fr/ad/sport_plein_air/3113794139,,
-   https://www.leboncoin.fr/ad/sport_plein_air/3113569466,,
+   https://www.leboncoin.fr/ad/blabla/3113819301,,
+   https://www.leboncoin.fr/ad/blabla/3113794139,,
+   https://www.leboncoin.fr/ad/blabla/3113569466,,
    ```
 
 2. Ouvrir le Terminal et aller dans le dossier :
@@ -90,17 +90,19 @@ Avantages du mode fichier CSV :
 
 **Scraper une seule annonce :**
 ```bash
-python3 scrape_leboncoin.py https://www.leboncoin.fr/ad/sport_plein_air/3113864769
+python3 scrape_leboncoin.py https://www.monurl.com
 ```
 
 **Scraper 5 annonces d'un coup :**
 ```bash
 python3 scrape_leboncoin.py \
-  https://www.leboncoin.fr/ad/sport_plein_air/3113819301 \
-  https://www.leboncoin.fr/ad/sport_plein_air/3113794139 \
-  https://www.leboncoin.fr/ad/sport_plein_air/3113569466 \
-  https://www.leboncoin.fr/ad/sport_plein_air/3113572008 \
-  https://www.leboncoin.fr/ad/sport_plein_air/3113567550
+  https://www.monurl.com \
+  https://www.monurl.com \
+  https://www.monurl.com \
+  https://www.monurl.com \
+  https://www.monurl.com \
+  https://www.monurl.com \
+  
 ```
 
 Note : Le `\` permet de continuer la commande sur plusieurs lignes pour plus de lisibilité. Vous pouvez aussi tout mettre sur une seule ligne.
